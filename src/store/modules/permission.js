@@ -5,13 +5,11 @@ import * as types from '../mutation-types'
 *   键名： 系统名/类型名/模块名/子模块/.../标识符
 *   值：access：true/false
 *      strategy: 'affirmed'/'denied'/inherit  //对其子模块没有匹配到的permission采用的策略：全部通过/全部拒绝/与父级相同
-*      platform: 'tmr'/'admin' 所属系统
 *
 * */
 
 export const state = {
-  permissionMap: {},
-  platform: ''
+  permissionMap: {}
 }
 
 export const getters = {
